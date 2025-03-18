@@ -1,0 +1,74 @@
+.container {
+    @apply bg-white w-full h-screen flex items-start justify-center;
+}
+
+.login-container {
+    @apply flex flex-col items-center mt-20;
+
+    h2 {
+        @apply text-azul text-3xl;
+    }
+}
+
+.login-form {
+    @apply flex flex-col items-start w-full;
+
+    p {
+        @apply mt-6;
+    }
+
+    input {
+        @apply border border-gris w-full h-10 px-3 pr-12;
+    }
+
+    /* Contenedor relativo para alinear el ícono */
+    .input-container {
+        @apply relative w-full;
+    }
+
+    /* Estilo para el icono del ojo */
+    .icon-Icon-feather-eye {
+        @apply absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer text-gray-500;
+    }
+}
+
+.login-sesion-activa {
+    @apply flex items-center space-x-2 w-full;
+    margin-top: 1rem;
+
+    input[type="checkbox"] {
+        @apply w-5 h-5 border-4 border-azul rounded-none appearance-none cursor-pointer;
+    }
+
+    /* Estilo cuando el checkbox está marcado */
+    input[type="checkbox"]:checked {
+        @apply bg-azul border-azul relative;
+    }
+
+    /* Agregar la palomita con un pseudo-elemento */
+    input[type="checkbox"]:checked::after {
+        content: "✔";/* Símbolo de palomita */
+        @apply text-white text-xs font-bold absolute inset-0 flex items-center justify-center;
+    }
+}
+
+.continuar {
+    @apply bg-azul w-full flex justify-center items-center;
+    margin: 1rem 0;
+
+    button {
+        @apply w-full text-center text-white h-12;
+    }
+}
+
+.login-acciones {
+    @apply flex flex-col items-center text-center space-y-2;
+
+    p {
+        @apply text-xs;
+    }
+
+    a {
+        @apply text-xs text-azul font-bold;
+    }
+}

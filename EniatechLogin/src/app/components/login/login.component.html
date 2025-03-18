@@ -1,0 +1,37 @@
+<div class="container">
+
+    <div class="login-container">
+        <h2>ENIATECH</h2>
+
+        <div class="login-form">
+            <p>Usuario</p>
+            <input type="text">
+
+            <p>Contraseña</p>
+            <div class="input-container">
+                 <input [type]="passwordVisible ? 'text' : 'password'" #passwordInput>
+                <span class="icon-Icon-feather-eye" (click)="togglePasswordVisible()"></span>
+            </div>
+
+        </div>
+
+
+        <div class="login-sesion-activa">
+            <input type="checkbox" class="checkbox">
+            <p>Mantener sesión activa</p>
+        </div>
+
+        <div class="continuar">
+            <!-- <button (click)="irAHome()">Continuar</button> -->
+        </div>
+
+        <div class="login-acciones">
+            <p>¿No tienes una cuenta? <a href="/signup">Crear cuenta</a></p>
+
+            <a href="/reset-pass">¿Olvidaste tu contraseña?</a>
+
+            <a href="">Politica de privacidad</a>
+        </div>
+    </div>
+
+</div>
