@@ -1,0 +1,81 @@
+.container {
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1e3a8a;
+        color: white;
+        padding: 1rem 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        
+        h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .salir {
+            button {
+                background-color: #ef4444;
+                color: white;
+                padding: 0.5rem 1rem;
+                border-radius: 4px;
+                cursor: pointer;
+                border: none;
+                font-weight: bold;
+                
+                &:hover {
+                    background-color: #dc2626;
+                }
+            }
+        }
+    }
+    
+    .table {
+        padding: 1rem;
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        thead {
+            background-color: #e2e8f0;
+            color: #374151;
+        }
+        
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 0.5rem;
+            text-align: left;
+        }
+        
+        tbody {
+            tr:nth-child(odd) {
+                background-color: #ffffff;
+            }
+            tr:nth-child(even) {
+                background-color: #f1f5f9;
+            }
+        }
+        
+        .text-green {
+            color: #16a34a;
+        }
+        
+        button {
+            background-color: #ef4444;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            border: none;
+            
+            &:hover {
+                background-color: #dc2626;
+            }
+        }
+    }
+}
